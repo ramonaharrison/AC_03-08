@@ -1,0 +1,49 @@
+package nyc.c4q.accesscode;
+
+/**
+ * Created by mona on 3/8/15.
+ */
+
+import java.util.Scanner;
+
+
+public class IsItDaylightSavings {
+    public static void main(String[] args) {
+        String profession;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is the month today?");
+        String month = input.next();
+        System.out.println("What is the day today?");
+        int day = input.nextInt();
+        int monthNumber;
+
+        String[] monthToNumber= {"January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"};
+
+            int i = 0;
+            while (! monthToNumber[i].equalsIgnoreCase(month) && i < 12) {
+                i += 1;
+            }
+            monthNumber = i + 1;
+
+            System.out.println(monthNumber);
+        }
+
+
+
+
+    }
+
+}}
+
